@@ -10,7 +10,7 @@ This repo sets up a full self-hosted media stack:
 - **Media server:** Jellyfin
 - **Requests:** Jellyseerr
 
-All services are configured to avoid the pitfalls we hit (TUN device, PF port not applied, path mappings, “Forbidden” API calls, etc.).
+All services are configured to avoid the pitfalls I ran into (TUN device, PF port not applied, path mappings, “Forbidden” API calls, etc.).
 
 ---
 
@@ -19,7 +19,7 @@ All services are configured to avoid the pitfalls we hit (TUN device, PF port no
 Use a **privileged** Ubuntu 24.04 container and enable:
 
 ```bash
-# Replace <CTID> with your container ID
+# Replace <CTID> with container ID
 pct set <CTID> -features nesting=1,keyctl=1
 
 # Enable /dev/net/tun
